@@ -1,5 +1,11 @@
-
+.postsBlock{
+    padding: 10px;
+}
 
 .img {
     width: 60px;
+}
+
+.posts{
+    margin-top: 10px;
 }
