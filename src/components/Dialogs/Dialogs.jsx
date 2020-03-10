@@ -24,16 +24,15 @@ const Message = (props) => {
 
 const Dialogs = (props) => {
 
-
     return (
         <div className={components.dialogs}>
             <div className={components.dialogs__items}>
-                {props.dialogs
+                {props.data.dialogs
                     .map((data) => <Dialog name={data.name} id={data.id}/>
                 )}
             </div>
             <div className={components.messages}>
-                {props.messages
+                {props.data.messagges
                     .map((data) => <Message message={data.message} id={data.id}/>
                 )}
 
