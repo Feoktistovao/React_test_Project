@@ -9,6 +9,7 @@ import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 
+
 const App = (props) => {
 
 
@@ -22,7 +23,10 @@ const App = (props) => {
                         data={props.state.dialogPage}/>
                     } path={"/dialogs"}/>
                     <Route render={ () => <Profile
-                        data={props.state.profilePage}/>
+                        data={props.state.profilePage}
+                        addPost={props.addPost}
+                        updateNewPostText={props.updateNewPostText}
+                    />
                     } path={'/profile'}/>
                     <Route render={News} path={'/news'}/>
                     <Route render={Music} path={'/music'} />
