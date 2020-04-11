@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="978b913d-dad5-4b63-8a5a-74d0a03a6018" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navigation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,10 +35,12 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Profile/MyPosts/Post" />
+    <property name="js.last.introduce.type" value="VAR" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/work/Digital-design-task-1/Digital-design-task-1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -49,6 +56,34 @@
       <recent name="D:\React\projects\01-first-project\my-app-1\src" />
     </key>
   </component>
+  <component name="RunManager" selected="npm.eject">
+    <configuration name="eject" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="eject" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.test" />
+        <item itemvalue="npm.eject" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -60,6 +95,10 @@
       <option name="presentableId" value="Default" />
       <updated>1583728772365</updated>
       <workItem from="1583728773969" duration="27064000" />
+      <workItem from="1584287812325" duration="55000" />
+      <workItem from="1585481230926" duration="14831000" />
+      <workItem from="1586415113624" duration="3781000" />
+      <workItem from="1586608399683" duration="2575000" />
     </task>
     <servers />
   </component>
@@ -71,7 +110,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -90,6 +131,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/-1280.65.1280.984@0.0.1920.1040" timestamp="1583753020216" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1584287865305">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1280.65.1280.984@0.0.1920.1040" timestamp="1584287865305" />
+    <state width="1899" height="321" key="GridCell.Tab.0.bottom" timestamp="1585591390777">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1899" height="321" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1585591390777" />
+    <state width="1899" height="321" key="GridCell.Tab.0.center" timestamp="1585591390777">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1899" height="321" key="GridCell.Tab.0.center/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1585591390777" />
+    <state width="1899" height="321" key="GridCell.Tab.0.left" timestamp="1585591390777">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1899" height="321" key="GridCell.Tab.0.left/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1585591390777" />
+    <state width="1899" height="321" key="GridCell.Tab.0.right" timestamp="1585591390777">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1899" height="321" key="GridCell.Tab.0.right/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1585591390777" />
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583752990034">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

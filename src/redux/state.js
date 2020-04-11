@@ -1,5 +1,7 @@
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+const UPDATE_NEW_MESSAGE_BODY = 'UPDATE_NEW_MESSAGE_BODY';
+const SEND_MESSAGE = 'SEND_MESSAGE';
 
 let store = {
     _state : {
@@ -21,8 +23,10 @@ let store = {
                 {id: 1, name: 'Alex'},
                 {id: 2, name: 'Oleg'},
                 {id: 3, name: 'Natali'}
-            ]
-        }
+            ],
+            newMessageBody : ""
+        },
+        sidebar: {}
     },
     getState() {
         return this._state;
@@ -44,23 +48,48 @@ let store = {
             this._state.profilePage.newPostText='';
             this._callSubscriber(this._state);
         } else
-            if (action.type === UPDATE_NEW_POST_TEXT) {
+                if (action.type === UPDATE_NEW_POST_TEXT) {
                 this._state.profilePage.newPostText = action.newText;
+                this._callSubscriber(this._state);
+            }
+            else
+                if (action.type === UPDATE_NEW_MESSAGE_BODY) {
+                this._state.dialogPage.newMessageBody = action.body;
+                this._callSubscriber(this._state);
+            }
+            else
+                if (action.type === SEND_MESSAGE) {
+                let body = this._state.dialogPage.newMessageBody;
+                this._state.dialogPage.newMessageBody = '';
+                this._state.dialogPage.messagges.push({id : 6, message: body});
                 this._callSubscriber(this._state);
             }
     }
 }
 
 export  const addPostActionCreator = () => {
-
-    return {
+    return (
+    {
         type : ADD_POST
-    }
+    })
 }
 
 export  const  updateNewPostTextActionCreator = (text) => {
+    return (
+    {
+        type: UPDATE_NEW_POST_TEXT,
+        newText: text
+    })
+}
 
-    return {type: UPDATE_NEW_POST_TEXT, newText: text}
+export const sendMessageCreator = () => ({type : SEND_MESSAGE})
+export const updateNewMessageBodyCreator = (text) => {
+    return (
+        {
+            type : UPDATE_NEW_MESSAGE_BODY,
+            body: text
+        }
+    )
 }
 
 export default store;
