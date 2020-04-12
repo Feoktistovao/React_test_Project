@@ -5,6 +5,7 @@ import {sendMessageCreator, updateNewMessageBodyCreator} from "../../redux/reduc
 
 
 const Dialog = (props) => {
+
     return (
         <div>
             <div className={components.dialog + ' ' + components.active}>
@@ -25,7 +26,8 @@ const Message = (props) => {
 }
 
 const Dialogs = (props) => {
-    let state = props.store.getState().dialogPage;
+
+    let state = props.store.dialogsPage;
 
     let dialogsElement = state.dialogs
         .map((data) => <Dialog name={data.name} id={data.id}/>
@@ -36,12 +38,12 @@ const Dialogs = (props) => {
     let newMessageBody = state.newMessageBody;
 
     let onSendMessageClick = () => {
-        props.store.dispatch(sendMessageCreator())
+        props.dispatch(sendMessageCreator())
     }
 
     let onNewMessageChange = (event)=>{
         let text = event.target.value;
-        props.store.dispatch(updateNewMessageBodyCreator(text))
+        props.dispatch(updateNewMessageBodyCreator(text))
     }
     return (
         <div className={components.dialogs}>
